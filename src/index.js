@@ -3,11 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { HMSRoomProvider } from '@100mslive/react-sdk';
+import { Toaster } from 'react-hot-toast';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <HMSRoomProvider>
+      <App />
+      <Toaster />
+    </HMSRoomProvider>
   </React.StrictMode>
 );
 
