@@ -24,7 +24,7 @@ export const Peer = ({ peer }) => {
 
   return (
     <div className='w-4/5 md:w-2/5 h-auto '>
-      <div className='w-full h-full'>
+      <div className='w-full h-auto'>
         {videoTrack?.enabled ? (
           <video
             className='rounded-md w-full h-full border'

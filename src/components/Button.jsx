@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Button = ({ title, onClick, type }) => {
+export const Button = ({ title, onClick, type = 'button' }) => {
   return (
     <button
       type={type}
