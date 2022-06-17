@@ -28,6 +28,7 @@ export const Peer = ({ peer }) => {
         {videoTrack?.enabled ? (
           <video
             className='rounded-md w-full h-full border'
+            style={{ transform: 'rotateY(180deg)' }}
             ref={videoRef}
             autoPlay
             muted
